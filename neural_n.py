@@ -8,8 +8,8 @@ def mlp():
 	data = pd.read_csv("EEG_Eye_State.csv")
 
 # Split into train data and training labels
-	X = data.loc[:,data.columns != 'O']
-	y = data['O']
+	X = data.loc[:,data.columns != 'Eye_detection']
+	y = data['Eye_detection']
 # Split into train and test data 
 	X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 8)
 # Train a multi-layer perceptron
