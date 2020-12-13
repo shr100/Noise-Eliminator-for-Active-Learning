@@ -241,8 +241,8 @@ p_fpr, p_tpr,_ = roc_curve(y_test,random_probs,pos_label = 1)
 
 from sklearn.metrics import roc_auc_score
 
-auc_score1 = roc_auc_score(y_test,pred_prob1[:,1]) 
-auc_score2 = roc_auc_score(y_test,pred_prob2[:,1])
+auc_score1 = roc_auc_score(y_test,pred_probs1[:,1]) 
+auc_score2 = roc_auc_score(y_test,pred_probs2[:,1])
 
 print("AUC Scores for Pure AL",auc_score1)
 print("AUC Scores for RANSAC",auc_score2)
