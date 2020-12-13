@@ -237,7 +237,7 @@ fpr2, tpr2, thresh2 = roc_curve(y_test, pred_probs2[:,1],pos_label=1)
 
 random_probs = [0 for i in range(len(y_test))]
 
-p_fpr, p_tpr = roc_curve(y_test,random_probs,pos_label = 1)
+p_fpr, p_tpr,_ = roc_curve(y_test,random_probs,pos_label = 1)
 
 from sklearn.metrics import roc_auc_score
 
@@ -260,33 +260,3 @@ plt.ylabel('True Positive Rate')
 plt.legend(loc='best')
 plt.savefig('ROC',dpi=300)
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# In[ ]:
-
-
-
-
