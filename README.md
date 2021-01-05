@@ -1,2 +1,3 @@
 # Cmput-656-project
-A course project for Interactive ML, to come up with an active learning method that improves despite sub-optimal labels provided to the system.
+An Interactive Machine Learning based algorithm that helps produce automated systems that provide highly accurate predictions, with a low number of training instances .
+**USE :** Can be used to improve predictions of any automated system and needs only a small subset of labelled data to produce stellar results.
